@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .my_nav {
+            background-color: aquamarine;
+            padding: 5px;
+            text-align: end;
+        }
+
+        .left {
+            background-color: green;
+            margin-top: 4px;
+            margin-right: 2px;
+            margin-bottom: 4px;
+        }
+
+        .main {
+            background-color: aqua;
+            margin: 4px 2px;
+        }
+
+        .right {
+            background-color: grey;
+            margin-top: 4px;
+            margin-left: 2px;
+            margin-bottom: 4px;
+        }
+
+        footer {
+            background-color: yellow;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            height: 90vh;
+        }
+
+        @media screen and (max-width: 650px) {
+            .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 90vh;
+        }
+        }
+
+        @media screen and (max-width: 450px) {
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            height: 90vh;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- this section is for navbar start -->
+    <div class="my_nav">
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Main</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    <!-- this section is for navbar end -->
+
+    <!-- Grid display start  -->
+    <div class="container">
+        <!-- left sidebar start -->
+        <div class="left">
+            <h1>left sidebar</h1>
+        </div>
+        <!-- left sidebar end -->
+        <!-- Main content start -->
+        <div class="main">
+            <h1>Main content section</h1>
+        </div>
+        <!-- Main content end -->
+        <!-- right sidebar start -->
+        <div class="right">
+            <h1>Right sidebar</h1>
+        </div>
+        <!-- right sidebar end -->
+    </div>
+    <!-- Grid display end  -->
+
+    <!-- footer start -->
+    <footer>
+        <address>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt fugiat velit voluptas iusto, eligendi
+            eum recusandae consequatur consectetur praesentium, non assumenda? Recusandae debitis fugit, quibusdam
+            facilis optio distinctio nemo dolores?</address>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
